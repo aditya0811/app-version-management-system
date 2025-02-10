@@ -21,16 +21,22 @@ public class Client {
 
     Device device = new Device("deviceid1");
     ApplicationUtil.installApplicationInTheDevice(phonePeapplication, device);
+    Device device2 = new Device("deviceid2");
+    ApplicationUtil.installApplicationInTheDevice(phonePeapplication, device2);
+    Device device3 = new Device("deviceid3");
+    ApplicationUtil.installApplicationInTheDevice(phonePeapplication, device3);
+    Device device4 = new Device("deviceid4");
+    ApplicationUtil.installApplicationInTheDevice(phonePeapplication, device4);
 
     ApplicationOwner applicationOwner = new ApplicationOwner("phonePeOwner", phonePeapplication);
 
     ApplicationFile applicationFilePhonePe1 = new ApplicationFile("1.0", "this is version 1.0 for phonepe");
-    ApplicationUtil.updateApplicationWithAllDevices(phonePeapplication, applicationFilePhonePe1);
-    ApplicationUtil.updateApplicationWithPercentage(phonePeapplication, applicationFilePhonePe1, 50);
-    List<String> deviceBetaList = new ArrayList<>();
-    deviceBetaList.add("deviceid1");
-    ApplicationUtil.updateApplicationWithBeta(deviceBetaList, phonePeapplication, applicationFilePhonePe1);
-
+//    ApplicationUtil.updateApplicationWithAllDevices(phonePeapplication, applicationFilePhonePe1);
+//    ApplicationUtil.updateApplicationWithPercentage(phonePeapplication, applicationFilePhonePe1, 30);
+//    List<String> deviceBetaList = new ArrayList<>();
+//    deviceBetaList.add("deviceid5");
+//    ApplicationUtil.updateApplicationWithBeta(deviceBetaList, phonePeapplication, applicationFilePhonePe1);
+//
 
 //    applicationOwner.updateApplication(applicationFilePhonePe1);
 
